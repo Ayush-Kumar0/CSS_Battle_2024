@@ -1,0 +1,193 @@
+* {
+    margin-top: 0px;
+}
+
+body,
+html {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+.outer {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.upper {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.upper #profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: white 3px solid;
+}
+
+.upper h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.upper h2::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid black;
+    width: 40%;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.upper .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.upper .background .leftbg,
+.upper .background .rightbg {
+    background-color: #9575cd;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -90px;
+}
+
+
+.upper .background .leftbg {
+    rotate: -12deg;
+    left: -100px;
+}
+
+.upper .background .rightbg {
+    rotate: 12deg;
+    right: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.middle {
+    /* height: 150px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 8px 35px;
+}
+
+.middle p {
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 0px;
+}
+
+.middle .icons1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 5px;
+}
+
+.middle img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lower {
+    position: relative;
+    /* height: 150px; */
+    width: 100%;
+    background-color: #5c6bc0;
+}
+
+.lower .icons2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 27px 20px;
+    padding-bottom: 39px;
+}
+
+.lower .triangle {
+    width: 20px;
+    height: 20px;
+    background-color: #5c6bc0;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.lower img {
+    width: 30px;
+    height: 30px;
+}
